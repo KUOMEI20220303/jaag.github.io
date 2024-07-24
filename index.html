@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喬安奈奈建築師事務所 Joannana Architect Group</title>    
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="css/magnific-popup.css"> 
+    <link rel="stylesheet" href="css/templatemo-ocean-vibes.css">
+    <link rel="stylesheet" href="css/volumeicon.css"> 
+
+<!--TemplateMo 554 Ocean Vibes https://templatemo.com/tm-554-ocean-vibes -->
+</head>
+<body>
+    <header class="tm-site-header">
+        <span><img src="img/LOGO-3.jpg" height="50"></span>
+        <span><img src="img/USEFORCON.png" height="50"></span> 
+        <br>
+        <br>                 
+        <h1 class="tm-mt-0 tm-mb-15"><span class="tm-color-primary">喬安奈奈</span> <span class="tm-color-gray-2">   建築師事務所</span></h1>
+        <em class="tm-tagline tm-color-light-gray">Joannana Architect Group   |  JAAG</em>
+    </header>
+
+    <!-- Video banner 400 px height -->
+    <div id="tm-video-container">
+        <button id="unmuteButton" onclick="unmuteVideo()">
+            <i class="fas fa-volume-up"></i> <!-- 喇叭图标 -->
+        </button>
+        <video autoplay muted loop id="tm-video">
+            <source src="video/video_HEAD.mp4" type="video/mp4">
+        </video>  
+        <i id="tm-video-control-button" class="fas fa-pause"></i>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var unmuteButton = document.getElementById('unmuteButton');
+            var video = document.getElementById('tm-video');
+            var isMuted = true; // 初始状态为静音
+    
+            unmuteButton.addEventListener('click', function() {
+                if (video) {
+                    isMuted = !isMuted; // 切换状态
+                    video.muted = isMuted; // 根据状态设置静音
+                    video.volume = isMuted ? 0 : 0.5; // 静音时音量为0，否则为0.5
+                    
+                    // 根据状态切换图标
+                    if (isMuted) {
+                        unmuteButton.innerHTML = '<i class="fas fa-volume-mute"></i>'; // 静音图标
+                    } else {
+                        unmuteButton.innerHTML = '<i class="fas fa-volume-up"></i>'; // 开声音图标
+                    }
+                }
+            });
+        });
+    </script>
+
+
+    <p>即將播映團隊的作品影片，先用其他有趣的影片代替❤</p>
+    <p>請讓MEI我小小偷懶，我會記得更新網頁的~嘿嘿</p>
+    <div class="tm-container">
+        <nav class="tm-main-nav">
+            <ul id="inline-popups">
+                <li class="tm-nav-item">
+                    
+                    <a href="#intro" data-effect="mfp-move-from-top" class="tm-nav-link">
+                        介紹<br/>
+                        Introduction                       
+                         <!-- 放字 -->                      
+                        <i class="fas fa-3x fa-water"></i>
+                    </a>                
+                </li>
+                <li class="tm-nav-item">
+                    <a href="#gallery" data-effect="mfp-move-from-top" class="tm-nav-link" id="tm-gallery-link">
+                        作品<br/>   
+                        Gallery
+                        <!-- 放字 --> 
+                        <i class="far fa-3x fa-images"></i>
+                    </a>
+                </li>
+                <li class="tm-nav-item">
+                    <a href="#testimonials" data-effect="mfp-move-from-top" class="tm-nav-link">
+                        證書<br/>
+                        Testimonials
+                        <!-- 放字 --> 
+                        <i class="far fa-3x fa-smile"></i>
+                    </a>
+                </li>
+                <li class="tm-nav-item">
+                    <a href="#about" data-effect="mfp-move-from-top" class="tm-nav-link">
+                        關於<br/>
+                        About
+                        <i class="fas fa-3x fa-tint"></i>
+                    </a>
+                </li>
+                <li class="tm-nav-item">
+                    <a href="#contact" data-effect="mfp-move-from-top" class="tm-nav-link">
+                        聯絡<br/>
+                        Contact
+                        <i class="far fa-3x fa-comments"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Popup itself -->
+        <div id="intro" class="popup mfp-with-anim mfp-hide tm-bg-gray">
+            <a href="#" class="tm-close-popup">
+                首頁｜Home
+                <i class="fas fa-times"></i>
+            </a>
+            <div class="tm-row tm-intro-row">
+                <img src="img/intro.jpg" alt="Image" class="tm-intro-img">
+                <div class="tm-col tm-bg-white tm-intro-pad">
+                    <h2 class="tm-color-primary tm-page-title">介紹。Introducing </h2>
+                    <h4 height="25">喬安奈奈建築師事務所 Joannana Architect Group</h4>
+                    <div class="tm-row tm-content-row">
+                        <div class="tm-col-6 tm-intro-col-l">
+                            <p>
+                            ▇ 設計〈意即為具目的性的規劃〉
+                            <br>
+                            ▇ 空間〈具多種形態且因人而宜〉
+                            <br><br>
+                            於這生活節奏如此快速的時代，<br>
+                            生活再忙也需記得留個空間給自己，<br>
+                            建築室內猶如人類的心靈，<br>
+                            儘管外表如何神采奕奕，<br>
+                            但不代表內裡也被同樣的滋養著，<br>
+                            別忘了！心靈也是需要維他命的！ <br>
+                            是否想擁有全意接納自己的空間，<br>
+                            能沉澱著所有所有的一切，<br>
+                            沉浸於『你』獨一無二的世界裡。<br><br>
+
+                                                    
+                        </div>
+                        <div class="tm-col-6">                            
+                            <p>
+                            ＃讓空間襯托出獨特的你！<br>
+                            ＃讓空間因你而綻放美麗的氣息!<br>
+                            ＃喬安奈奈建築師事務所<br>
+                            ＃jaagarchi@gmail.com<br> </p>    
+                            </p>
+                            <!--放字暫時用不到
+                            <p>
+                                Top right corner is a return home with an
+                                icon that will close this pop-up page.
+                            </p>
+                            <p class="tm-mb-80">
+                                Next Page will bring you to the gallery
+                                page directly without going back to main
+                                menu.
+                            </p>-->
+                            <div class="tm-text-center">
+                                <a href="#" class="tm-btn tm-btn-primary mfp-prevent-close tm-btn-next">
+                                   下一頁｜Next Page
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>                
+            </div> 
+        </div>
+
+        <div id="gallery" class="popup mfp-with-anim mfp-hide tm-bg-gray">
+            <a href="#" class="tm-close-popup">
+                首頁｜Home
+                <i class="fas fa-times"></i>
+            </a>
+            <div class="tm-row tm-gallery-row">
+                <div class="tm-gallery">
+                    <div class="tm-gallery-container">  
+                        <!--作品集照片-->                      
+                        <figure class="effect-chico tm-gallery-item portrait">
+                            <img src="img/gallery/portrait-01.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>更多<br>More</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item nature">
+                            <img src="img/gallery/nature-01.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>更多<br>More</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item animal">
+                            <img src="img/gallery/animal-01.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>更多<br>More</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item building">
+                            <img src="img/gallery/building-01.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item portrait">
+                            <img src="img/gallery/portrait-02.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item nature">
+                            <img src="img/gallery/nature-02.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item animal">
+                            <img src="img/gallery/animal-02.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item building">
+                            <img src="img/gallery/building-02.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item portrait">
+                            <img src="img/gallery/portrait-03.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item animal">
+                            <img src="img/gallery/animal-03.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item building">
+                            <img src="img/gallery/building-03.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item portrait">
+                            <img src="img/gallery/portrait-04.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item animal">
+                            <img src="img/gallery/animal-04.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item building">
+                            <img src="img/gallery/building-04.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item portrait">
+                            <img src="img/gallery/portrait-05.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item animal">
+                            <img src="img/gallery/animal-05.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item building">
+                            <img src="img/gallery/building-05.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item portrait">
+                            <img src="img/gallery/portrait-06.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item animal">
+                            <img src="img/gallery/animal-06.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item building">
+                            <img src="img/gallery/building-06.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item portrait">
+                            <img src="img/gallery/portrait-07.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item animal">
+                            <img src="img/gallery/animal-07.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item building">
+                            <img src="img/gallery/building-07.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item portrait">
+                            <img src="img/gallery/portrait-08.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>                                                
+                        
+                        <figure class="effect-chico tm-gallery-item nature">
+                            <img src="img/gallery/nature-03.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item nature">
+                            <img src="img/gallery/nature-04.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item nature">
+                            <img src="img/gallery/nature-05.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item nature">
+                            <img src="img/gallery/nature-06.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item nature">
+                            <img src="img/gallery/nature-07.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item nature">
+                            <img src="img/gallery/nature-08.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>                                                
+                        
+                        <figure class="effect-chico tm-gallery-item animal">
+                            <img src="img/gallery/animal-08.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item building">
+                            <img src="img/gallery/building-08.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>即將上映<br>Coming Soon</p>							
+                            </figcaption>			
+                        </figure>                
+                    </div>
+                </div>
+                <!-- Gallery navigation and description -->
+                <div class="tm-col tm-gallery-right">
+                    <h2 class="tm-color-primary tm-mt-35 tm-page-title">作品。Gallery</h2>
+                    <div class="tm-gallery-right-inner">
+                        <ul class="tm-gallery-links">
+                            <li>
+                                <a href="#" class="active tm-gallery-link" data-filter="*">
+                                    <i class="fas fa-layer-group tm-gallery-link-icon"></i>
+                                    全部｜All
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tm-gallery-link" data-filter="building">
+                                    <i class="far fa-building tm-gallery-link-icon"></i>
+                                    建築｜Buildings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tm-gallery-link" data-filter="portrait">
+                                    <i class="fas fa-portrait tm-gallery-link-icon"></i>
+                                    景觀｜Landscape<!--原本的 → Portraits-->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tm-gallery-link" data-filter="nature">
+                                    <i class="fas fa-leaf tm-gallery-link-icon"></i>
+                                    細部｜Detail<!--原本的 →Nature-->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tm-gallery-link" data-filter="animal">
+                                    <i class="fas fa-paw tm-gallery-link-icon"></i>
+                                    其他｜Others<!--原本的 → Animals-->
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        <p>
+                            你說，建築到底有什麼?<br/>
+                            我說，建築因你而存在!
+                        </p>
+                        <p>
+                            或許我們團隊不是完美的，<br/>
+                            但我們團隊絕對是認真的。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="testimonials" class="popup mfp-with-anim mfp-hide tm-bg-gray">
+            <a href="#" class="tm-close-popup">
+                首頁｜Home
+                <i class="fas fa-times"></i>
+            </a>
+            <div class="tm-testimonials-inner">
+                <h2 class="tm-color-gray tm-testimonial-col tm-page-title">證書。Testimonials</h2>
+                <div class="tm-row tm-testimonial-row">                
+                    <div class="tm-col tm-testimonial-col">
+                        <!--第一段-->
+                        <p>
+                            室內設計乙級技術士<br/>
+                            室內裝修工程管理乙級技術士<br/>
+                            建築師證書<br/>                            
+                            <!--原本的內文
+                            OCEAN vibes is free website template from 
+                            <a rel="nofollow" href="https://templatemo.com" class="tm-color-primary">TemplateMo</a>
+                            website. You are allowed to use
+                            it for commercial purpose. You can convert this template as a CMS theme or a custom
+                            website builder template.-->
+                        </p>
+                        <!--原本的內文
+                        <em class="tm-mb-30 tm-color-light-gray">
+                            You may support us by telling your friends
+                            about our TemplateMo site. Feel free to 
+                            contact us if you have anything to ask.
+                        </em>
+                        -->
+                        <p>
+                            <!--原本的內文
+                            You can make a little contribution via
+                            <a rel="nofollow" href="http://paypal.me/templatemo" target="_parent"><strong>PayPal</strong></a>
+                                or saying about TemplateMo to your friends. Duis egestas lorem eu nisi
+                            finibus, sit amet elementum lacus pretium.-->
+                        </p>
+                        <p>
+                            <!--原本的內文
+                            In tempor felis vitae nulla feugiat aliquam.
+                            Vivamus vitae congue mi. Sed maximus velit
+                            vestibulum nisl condimentum hendrerit.
+                            -->
+                        </p>
+                    </div>
+                    <!--第二段-->
+                    <div class="tm-col tm-testimonial-col tm-testimonial-col-2">
+                        <!--<img src="img/testimonial-01.jpg" alt="Image" class="tm-mb-30">-->
+                        <blockquote>
+                            <p>
+                                <!--
+                                "Suspendisse eu mollis diam, at ullamcorper
+                                diam. Ut sit amet arcu metus. Nullam mattis
+                                eros eget." by <span class="tm-color-primary">George, Chief Editor</span>
+                                -->
+                                
+                            </p>
+                        </blockquote>
+                        <blockquote class="tm-mb-50">
+                            <p>
+                                <!--
+                                    "Quisque et lorem accumsan, sollicitudin
+                                dolor vel, facilisis eros. Donec aliquet felis in
+                                mollis egestas." by <span class="tm-color-primary">Mary, CEO of Web</span>
+                                -->
+                            </p>
+                        </blockquote>  
+                        <div class="tm-text-center">
+                            <a href="#" class="tm-btn tm-btn-primary mfp-prevent-close tm-btn-contact">
+                                聯絡我們｜Contact Us
+                            </a>
+                        </div>                 
+                    </div>
+                    <!--第三段-->
+                    <div class="tm-col tm-testimonial-col tm-testimonial-col-2">
+                        <p>
+                            <!--文字待放-->
+                        </p>
+                        <p>
+                            <!--文字待放-->
+                        </p>
+                        <p>
+                            <!--文字待放-->
+                        </p>
+                        <!--<img src="img/testimonial-02.jpg" alt="Image" class="tm-mt-35">-->                    
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <div id="about" class="popup mfp-with-anim mfp-hide tm-bg-gray">
+            <a href="#" class="tm-close-popup">
+                首頁｜Home
+                <i class="fas fa-times"></i>
+                
+            </a>
+            <h2 class="tm-color-primary tm-about-col tm-mb-40 tm-page-title">關於。About</h2>                                      
+            <div class="tm-row tm-about-row">
+                <div class="tm-col tm-about-col tm-about-left">
+                    即將完善 coming soon<br/>   
+                   
+                    <a href="#" class="tm-btn tm-btn-primary mfp-prevent-close tm-btn-contact tm-mb-40">
+                        聯絡我們｜Contact Us
+                    </a>                
+                </div>               
+            </div>
+        </div>
+
+        <div id="contact" class="popup mfp-with-anim mfp-hide tm-bg-gray">
+            <a href="#" class="tm-close-popup">
+                首頁｜Home
+                <i class="fas fa-times"></i>
+            </a>
+            <h2 class="tm-contact-col tm-color-primary tm-page-title tm-mb-40">聯絡我們｜Contact Us</h2>
+            <div class="tm-row tm-contact-row">
+                <div class="tm-col tm-contact-col">
+                
+                                    
+                      <!-- 嵌入 Google Form -->
+                          <div class="contact-container">
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf_MPr96V3GTf3x8d8ybKpcPlMRLJATmPD1LFHHz56hqHyrpw/viewform?embedded=true" width="450" height="520" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+                         </div>
+                          </div>
+                         <div class="tm-col tm-contact-col tm-contact-col-r">
+
+
+                    <!-- Map -->
+                    <div class="mapouter tm-mb-40">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="100%" id="gmap_canvas"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14732.744701184964!2d120.3059099!3d22.6095219!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0313e380ffa9%3A0xefce258287edaafb!2zVU5JQ1VCRSDkup7lhYvllYbli5nkuK3lv4M!5e0!3m2!1szh-TW!2stw!4v1721814862185!5m2!1szh-TW!2stw"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+       
+
+                    </div>
+
+                    <!-- Address -->
+                    <address class="tm-mb-40">
+                        地址：806高雄市前鎮區中山二路91號11樓之1<br/>
+                        營業時間：週一至五 09:00~17:30 
+                    </address>
+
+                    <!-- Links -->
+                    <ul class="tm-contact-links">
+                        <li>                            
+                            <a href="tel:0100200340">
+                                <i class="fas fa-phone tm-contact-link-icon"></i>
+                                電話: 07 334 0006
+                            </a>
+                         </li>
+                        </li>
+                        <li>
+                            <a href="mailto:info@company.com">
+                                <i class="fas fa-at tm-contact-link-icon"></i>
+                                信箱: jaagarchi@gmail.com
+                            </a>
+                        </li>                   
+                        <li>
+                            <a href="https://forms.gle/ZPmsmTwxRq5YwrAS6">
+                                <i class="fas fa-link tm-contact-link-icon"></i>
+                                業主請點我 : 進一步填寫需求表單
+                            </a>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="tm-footer">
+        <span>Copyright &copy; 2024 Joannana Architect Group</span>
+        <span>Web Designed by 
+        <a href="https://templatemo.com" title="free website templates" target="_parent" rel="nofollow">TemplateMo</a></span>
+</footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>    
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html>
