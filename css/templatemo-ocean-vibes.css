@@ -111,7 +111,7 @@ a {
     align-items: center; /* 垂直居中 */
     flex: 1; /* 使公告条占据剩余空间 */
     position: relative;
-    height: 30px; /* 公告条高度 */
+    height: 35px; /* 公告条高度 */
     overflow: hidden; /* 防止溢出 */
     max-width: calc(100% - 200px); /* 留出按钮宽度 */
     justify-content: center; /* 使公告项在容器中水平居中 */
@@ -121,7 +121,7 @@ a {
 .announcement-bar p {
     position: absolute;
     margin: 0;
-    font-size: 12px;
+    font-size: 15px;
     color: #309AFD; /* 字体颜色设置为红色 */
     line-height: 30px; /* 使文字垂直居中 */
     white-space: nowrap;
@@ -140,7 +140,7 @@ a {
     background-color: #ffffff00;
     border: none;
     color: #9e9e9e;
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px;
     cursor: pointer;
     z-index: 1001;
@@ -281,7 +281,7 @@ html, body {
 /* 滾動時背景固定的樣式 */
 .header-content.shrink {
     position: fixed; /* 固定在頁面上方 */
-    top: 30px; /* 距離上方邊緣 55px */
+    top: 35px; /* 距離上方邊緣 55px */
     left: 0;
     width: 100%; /* 佔滿整個頁面寬度 */
     padding: 25px 70px 10px; /* 調整內邊距 */
