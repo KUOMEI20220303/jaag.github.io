@@ -489,21 +489,25 @@ html, body {
     .tm-footer {
         padding: 15px;
         font-size: 0.8em;
+        display: flex;
+        flex-direction: column; /* 使所有子元素縱向排列 */
+        align-items: flex-start; /* 靠左對齊 */
     }
 
-    .tm-footer h4 {
-        font-size: 1rem;
+    .tm-footer > div {
+        display: flex;
+        flex-direction: column; /* 確保每個 div 內部的內容縱向排列 */
+        align-items: flex-start; /* 靠左對齊 */
+        margin-bottom: 15px; /* 調整縱向排列的間距 */
     }
 
     .tm-footer img {
         max-width: 100%; /* 使圖片不超過容器的寬度 */
         height: auto; /* 保持圖片比例 */
-    }
-
-    .tm-footer a {
-        font-size: 1.2rem;
+        margin-bottom: 10px; /* 調整圖片與下方內容的間距 */
     }
 }
+
 
 /* 當螢幕寬度小於 425px 時 */
 @media (max-width: 425px) {
