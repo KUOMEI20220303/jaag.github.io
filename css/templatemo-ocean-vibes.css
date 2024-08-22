@@ -160,7 +160,7 @@ a {
 }
 
 /* 处理小屏幕的情况 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .announcement-wrapper {
         padding: 0 20px; /* 减少左右留白 */
     }
@@ -451,6 +451,64 @@ html, body {
     border-top: 1px solid #ddd; /* 確保邊框橫跨整個頁腳 */
 }
 
+.footer-container {
+    margin-left: 40px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-company {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 05px;
+    margin-bottom: 25px;
+}
+
+.logo-company img {
+    height: 100px;
+    margin-right: 20px;
+}
+
+.company-info {
+    margin-right: 40px;
+}
+
+.company-info h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+    white-space: nowrap;
+}
+
+.company-info p {
+    font-size: 1rem;
+    margin: 0;
+    white-space: nowrap;
+    margin-bottom: 25px;
+}
+
+.office-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.office-info h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+.office-info p {
+    font-size: 1rem;
+    margin: 0;
+    white-space: nowrap;
+}
+
 .tm-footer .back-to-top {
     position: fixed; /* 默認位置 */
     bottom: 70px; /* 距離底部 70px */
@@ -478,42 +536,42 @@ html, body {
     }
 
     .tm-footer .back-to-top {
-        position: fixed; /* 固定位置 */
         right: 25px; /* 距離右邊 25px */
         bottom: 25px; /* 預設距離底部 25px */
     }
 }
 
+
 /* 當螢幕寬度小於 700px 時 */
-@media (max-width: 700px) {
-    .tm-footer {
-        padding: 15px;
-        font-size: 0.8em;
+@media (max-width: 740px) {
+    .footer-content {
         display: flex;
-        flex-direction: column; /* 使所有子元素縱向排列 */
-        align-items: flex-start; /* 靠左對齊 */
+        flex-direction: column; /* 確保內容縱向排列 */
+        align-items: left; /* 將項目水平置中 */
+        width: 100%; /* 使 footer-content 佔滿整個寬度 */
     }
 
-    .tm-footer > div {
+    .logo-company {
         display: flex;
-        flex-direction: column; /* 確保每個 div 內部的內容縱向排列 */
-        align-items: flex-start; /* 靠左對齊 */
-        margin-bottom: 15px; /* 調整縱向排列的間距 */
+        flex-direction: column; /* 確保 LOGO 和公司名稱縱向排列 */
+        align-items: left; /* 將 LOGO 和公司名稱水平置中 */
+        width: 80%; /* 設定適當的寬度 */
+        margin-bottom: 20px; /* 調整 LOGO 和公司名稱與下方內容的間距 */
     }
 
-    .tm-footer img {
-        max-width: 100%; /* 使圖片不超過容器的寬度 */
-        height: auto; /* 保持圖片比例 */
-        margin-bottom: 10px; /* 調整圖片與下方內容的間距 */
+    .logo-company img {
+        margin-bottom: 60px; /* 調整圖片與公司名稱之間的間距 */
     }
-}
 
+    .company-info {
+        margin-bottom: -20px; /* 調整公司名稱與辦公室資訊之間的間距 */
+        width: 80%; /* 設定適當的寬度 */
+        text-align: left; /* 使公司名稱靠左對齊 */
+    }
 
-/* 當螢幕寬度小於 425px 時 */
-@media (max-width: 425px) {
-    .tm-footer p a {
-        font-size: 1rem; /* 確保字體大小一致 */
-        color: #666; /* 確保顏色一致 */
+    .office-info {
+        width: 80%; /* 設定適當的寬度 */
+        text-align: left; /* 使辦公室資訊靠左對齊 */
     }
 }
 
